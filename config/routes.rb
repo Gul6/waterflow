@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'homes#index'
+  
   get 'about_us' => 'homes#about_us'
-  
-  
+  get 'technology' => 'homes#technology'
   
   
   # Example of regular route:
