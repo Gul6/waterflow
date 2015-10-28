@@ -10,4 +10,17 @@ module ApplicationHelper
 	      end
 	    end
 	end
+	
+	def path_active?(path)
+	  case
+	  when path == root_path && action_name == 'index' && controller_name == 'homes'
+	    return "active"
+	  when path == technology_path && action_name == 'technology' && controller_name == 'homes'
+	    return "active"
+	  else
+	    return ""
+	  
+	  end
+	  
+	end
 end
