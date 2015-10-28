@@ -15,21 +15,13 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-.navbar-default {
-    background-color: #252525;
-    border-color: #e7e7e7;
-    color: #F2DEDE;
-}
-
+@import "custom_bootstrap";
 .footer {
-  @extend .navbar-default;
   position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  
 }
 
 .footer > .container {
