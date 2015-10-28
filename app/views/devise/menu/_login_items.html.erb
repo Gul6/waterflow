@@ -5,6 +5,6 @@
 <% end %>
 <li>
   <% if current_user %>
-    <%= link_to(current_user.email, '#', :class => 'nav-email')%>
+    <%= link_to(current_user.full_name, '#', :class => 'nav-email')%>
   <% end %>
 </li>
