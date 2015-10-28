@@ -3,10 +3,8 @@
 <% else %>
   <li><%= link_to('Login', new_user_session_path)  %></li>
 <% end %>
-<li>User: 
+<li>
   <% if current_user %>
-    <%= current_user.email %>
-  <% else %>
-    (not logged in)
+    <%= link_to(current_user.email, '#', :class => 'nav-email')%>
   <% end %>
 </li>
