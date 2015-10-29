@@ -17,6 +17,8 @@ module ApplicationHelper
 	    return "active"
 	  when path == technology_path && action_name == 'technology' && controller_name == 'homes'
 	    return "active"
+	  when path == about_us_path && action_name == 'about_us' && controller_name == 'homes'
+	    return "active"
 	  else
 	    return ""
 	  
