@@ -16,7 +16,7 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.user %></td>
+        <td><%= post.user.full_name %></td>
         <td><%= post.title %></td>
         <td><%= post.description %></td>
         <td><%= post.rating %></td>
