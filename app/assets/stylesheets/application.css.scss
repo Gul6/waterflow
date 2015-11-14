@@ -17,9 +17,19 @@
 @import "custom_bootstrap";
 @import "devise_form";
 @import "footer";
+@import "bootstrap.min.css.scss";
+
 
 .navbar-default{
     border-color: #292c2f;
+}
+
+.thumb {
+  height: 60%;
+  width: 60%;
+  max-width: 30px;
+  max-height: 30px;
+  
 }
 
 
