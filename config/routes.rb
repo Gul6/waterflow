@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   
   get 'about_us' => 'homes#about_us'
   get 'technology' => 'homes#technology'
+
+  resource :users, only: [] do
+      get 'dashboard'
+  end
   
   
   # Example of regular route:
