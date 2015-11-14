@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'about_us' => 'homes#about_us'
   get 'technology' => 'homes#technology'
 
-  resource :users, only: [] do
+  resources :users, only: [] do
       get 'dashboard'
   end
   
